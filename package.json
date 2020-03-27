@@ -4,19 +4,25 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1",
-		"build": "webpack --mode production",
-		"build:dev": "webpack --mode development",
-		"watch": "npm run build:dev -- --watch"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode production",
+    "build:dev": "webpack --mode development",
+    "watch": "npm run build:dev -- --watch",
+    "start": "node .",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "babel-loader": "^8.1.0",
     "core-js": "^3.6.4",
+    "express": "^4.17.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-router-dom": "^5.1.2",
     "regenerator-runtime": "^0.13.5",
+    "styled-components": "^5.0.1",
     "webpack": "^4.42.1",
     "webpack-cli": "^3.3.11"
   },
@@ -25,6 +31,11 @@
     "@babel/core": "^7.9.0",
     "@babel/preset-env": "^7.9.0",
     "@babel/preset-react": "^7.9.4",
-    "@babel/register": "^7.9.0"
+    "@babel/register": "^7.9.0",
+    "@storybook/addon-actions": "^5.3.17",
+    "@storybook/addon-links": "^5.3.17",
+    "@storybook/addons": "^5.3.17",
+    "@storybook/react": "^5.3.17",
+    "babel-plugin-styled-components": "^1.10.7"
   }
 }
